@@ -40,7 +40,6 @@ function App() {
             <Services />
             <HowItWorks />
             <WhyUs />
-            <WhyUs />
             <Safety />
             <ExploreCity />
             <Fleet />
