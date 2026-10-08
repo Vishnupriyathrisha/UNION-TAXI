@@ -75,7 +75,7 @@ const Navbar = () => {
         maxWidth="xl"
         sx={{
           px: {
-            xs: 0.6,
+            xs: 0.45,
             sm: 1.5,
             md: 3,
           },
@@ -96,7 +96,7 @@ const Navbar = () => {
             alignItems: "center",
 
             gap: {
-              xs: 0.2,
+              xs: 0.15,
               sm: 0.7,
               md: 1.8,
             },
@@ -124,13 +124,13 @@ const Navbar = () => {
               textDecoration: "none",
 
               width: {
-                xs: 36,
+                xs: 34,
                 sm: 44,
                 md: 50,
               },
 
               height: {
-                xs: 36,
+                xs: 34,
                 sm: 44,
                 md: 50,
               },
@@ -176,8 +176,7 @@ const Navbar = () => {
 
               alignItems: "center",
 
-              justifyContent:
-                "space-between",
+              justifyContent: "space-between",
 
               gap: {
                 xs: 0,
@@ -207,7 +206,7 @@ const Navbar = () => {
                     flex: 1,
 
                     px: {
-                      xs: 0.05,
+                      xs: 0,
                       sm: 0.4,
                       md: 0.9,
                     },
@@ -258,7 +257,7 @@ const Navbar = () => {
 
                       "& svg": {
                         fontSize: {
-                          xs: 11,
+                          xs: 10,
                           sm: 15,
                           md: 18,
                         },
@@ -327,18 +326,19 @@ const Navbar = () => {
 
           <Button
             component="a"
-            href="#booking"
+            href="#contact"
             variant="contained"
             endIcon={
               <ArrowForwardRoundedIcon />
             }
+            onClick={() => setActiveItem("Contact")}
             sx={{
               flexShrink: 0,
 
               minWidth: "auto",
 
               px: {
-                xs: 0.45,
+                xs: 0.4,
                 sm: 0.9,
                 md: 1.6,
               },
@@ -376,6 +376,9 @@ const Navbar = () => {
 
               boxShadow:
                 "0 5px 14px rgba(245,197,66,0.23)",
+
+              transition:
+                "transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease",
 
               "& .MuiButton-endIcon": {
                 marginLeft: {
@@ -435,4 +438,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
